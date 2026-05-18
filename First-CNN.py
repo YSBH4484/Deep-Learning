@@ -55,6 +55,6 @@ for epoch in range(10):
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
-    print(f"Epoch : {epoch + 1}, loss is {total_loss/len(train_loader):.3f}\n")
+    print(f"Epoch : {epoch + 1}, loss is {total_loss/len(train_loader):.4f}\n")
 
 torch.save(model.state_dict(), "model.pth")
